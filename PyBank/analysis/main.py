@@ -67,9 +67,7 @@ with open(csvpath) as csvfile:
 #Write to a .txt file
 output_path = os.path.join('..', 'Resources', 'results.txt')
 
-# Open the file in write mode
 with open(output_path, 'w') as file:
-    # Write the financial analysis results
     file.write("Financial Analysis\n")
     file.write("-----------------------------\n")
     file.write(f"Total Months: {total_months}\n")
