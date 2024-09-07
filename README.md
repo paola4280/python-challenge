@@ -12,5 +12,8 @@ To solve this challenge, first I read the csv file by using the Python command a
 I also used loops and if statements for the logical aspect of the algorithm. 
 
 For debugging, I used Xpert Learning Assistant and ChatGPT, mostly for the part to calculate the greatest increase in profits (date and amount), but it finally worked out. 
-
+"dates.append(row[0])"
+"if change > greatest_increase:
+                greatest_increase = change
+                greatest_increase_date = row[0]"
 
