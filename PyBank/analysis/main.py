@@ -63,3 +63,18 @@ with open(csvpath) as csvfile:
     print(f"Average Change: ${avg_change:.2f}") #float with 2 decimals
     print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")
     print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")
+    
+#Write to a .txt file
+output_path = os.path.join('..', 'Resources', 'results.txt')
+
+# Open the file in write mode
+with open(output_path, 'w') as file:
+    # Write the financial analysis results
+    file.write("Financial Analysis\n")
+    file.write("-----------------------------\n")
+    file.write(f"Total Months: {total_months}\n")
+    file.write(f"Total: ${PnLTotal}\n")
+    file.write(f"Average Change: ${avg_change:.2f}\n")  # float with 2 decimals
+    file.write(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})\n")
+    file.write(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})\n")
+
